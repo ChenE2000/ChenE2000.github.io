@@ -17,9 +17,15 @@
 	text-align: left;
 	padding-left: 10px;
 	padding-bottom: 80px;
-	
+	margin: 20px;
 	background-repeat: no-repeat; 
 	background-position: right, bottom;
+	border-color: white;
+	border-style: none;
+	
+}
+.show-box:hover {
+	opacity: 80%;
 	
 }
 
