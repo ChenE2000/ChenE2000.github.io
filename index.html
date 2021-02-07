@@ -12,36 +12,6 @@
 		</script>
 		
 		
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="https://www.nowapi.com/style/jquery/1.11.3/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-     $.ajax({
-        type          : 'get',
-        async         : false,
-        url           : 'http://api.k780.com/?app=weather.today&weaid=1&appkey=APPKEY&sign=SIGN&format=json&jsoncallback=data',
-        dataType      : 'jsonp',
-        jsonp         : 'callback',
-        jsonpCallback : 'data',
-        success       : function(data){
-            if(data.success!='1'){
-                alert(data.msgid+' '+data.msg);
-                exit;
-            }
-            //遍历
-            var description = "";
-            for(var i in data.result){
-                var property=data.result[i];
-                description+=i+" = "+property+"\n";
-            }
-            alert(description);
-        },
-        error:function(){
-            alert('fail');
-        }
-    });
-});
-	</script>	
 		
 		
 		
