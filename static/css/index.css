@@ -71,12 +71,15 @@ body {
 }
 
 
-/* 伪图像 */
+/* 伪图像 background-color: #aaa;  padding: 20px;*/
 
 .fakeimg {
-    background-color: #aaa;
     width: 100%;
-    padding: 20px;
+}
+
+.fakeimg img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 
