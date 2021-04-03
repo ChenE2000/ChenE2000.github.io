@@ -1,23 +1,54 @@
 <head>
-	<link rel="stylesheet" href="article.css" type="text/css">
+    <meta charset="utf-8">
+    <title>My Article</title>
+    <link rel="stylesheet" href="./static/css/article.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
-<body bgcolor="#C7C7C7">
+
+<body>
+
+    <div class="container">
+        <!-- <h1>ChenE的文章库</h1> -->
+        <h4>最后更新于:2021/04/03</h4>
+        <!-- <HR style="FILTER:alpha(opacity=100,finishopacity=0,style=2)" width="80%"> -->
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>标题</th>
+                    <th>主题</th>
+                    <th>时间</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr onclick="location.href='./article/网络爬虫爬取豆瓣电影评分并下载封面图片.html'">
+
+                    <td>网络爬虫爬取豆瓣电影评分并下载封面图片</td>
+                    <td>实验</td>
+                    <td>20210401</td>
+
+                </tr>
+
+                <tr onclick="location.href='./article/仓库管理系统.pdf'">
+                    <td>Java实训之仓库管理系统</td>
+                    <td>作品</td>
+                    <td>20210110</td>
+                </tr>
+                <tr>
+                    <td>leetcode刷题笔记</td>
+                    <td>笔记</td>
+                    <td>逐步更新</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
-	<view class="row-view">
-	<h1>ChenE的文章库</h1>
-		<h4>最后更新于:2021/02/06</h4>
-		<HR style="FILTER:alpha(opacity=100,finishopacity=0,style=2)" width="80%">
-		
-			<a href="article/Me_Gustas_Cuando_Callas.html">
-		<button class="btn-unit">Me Gustas Cuando Callas</button>
-			
-			</a>
-		
-			
-		<button class="btn-unit">
-		</button>
-	
-	</view>
 
 </body>
