@@ -23,6 +23,23 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             user-select: none;
         }
+        
+        .blur-bg {
+            filter: blur(5px);
+            width: 97.5%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        
+        .jumbotron {
+            background: none;
+            border: #161515 solid 1px;
+        }
+        
+        .stroke-light {
+            text-shadow: 5px 5px 5px #a7a7a7;
+        }
     </style>
 
     <script>
@@ -59,13 +76,19 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <div class="jumbotron m-auto">
+
+
+                <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover01.png') no-repeat center center;background-size: 100%;"></div>
+
+
+                <div class="jumbotron m-auto stroke-light">
                     <h1 class="display-4">USA COVID-19 Visualization Platform</h1>
                     <p class="lead">A web platform based on echarts and front end web technology, merely no back-end technology is used.</p>
                     <hr class="my-4">
                     <p>This project is the final assignment of Hadoop course. It is about data statistics and visualization of the US epidemic (up to May 21, 2020).</p>
                     <a class="btn btn-primary btn-lg" href="http://1.15.156.121:88/" role="button">Learn more</a>
                 </div>
+
             </div>
         </div>
 
@@ -73,7 +96,10 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <div class="jumbotron m-auto">
+
+                <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover02.png') repeat center center;background-size: 100%;"></div>
+
+                <div class="jumbotron m-auto text-light stroke-light">
                     <h1 class="display-4">Traffic Prediction Visualization Platform</h1>
                     <p class="lead">A web platform based on echarts and front end web technology, using flask as web frame and MySQL as database.</p>
                     <hr class="my-4">
