@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/toast.min.css">
+    <link rel="Shortcut Icon" href="../static/img/20210509023827712_easyicon_net_16.ico">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../static/js/toast.min.js"></script>
+
+    <style>
+        html {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            user-select: none;
+        }
+    </style>
+
+    <script>
+        $('[data-toggle="popover"]').popover({
+            container: 'body',
+            title: 'Search',
+            html: true,
+            placement: 'bottom',
+            sanitize: false,
+            content: function() {
+                return $("#PopoverContent").html();
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-sm-12">
+                <nav class="nav nav-pills nav-stacked nav-fill">
+                    <a class="navbar-brand text-dark" href="#">Home Page</a>
+                    <a class="nav-link text-dark" href="#">Article</a>
+                    <a class="nav-link text-dark" href="#">Share</a>
+                    <a class="nav-link text-dark" href="#">More</a>
+                </nav>
+            </div>
+        </div>
+
+        <hr style="margin:0; padding:0; border-top:1px solid #161515;">
+
+        <br>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron m-auto">
+                    <h1 class="display-4">USA COVID-19 Visualization Platform</h1>
+                    <p class="lead">A web platform based on echarts and front end web technology, merely no back-end technology is used.</p>
+                    <hr class="my-4">
+                    <p>This project is the final assignment of Hadoop course. It is about data statistics and visualization of the US epidemic (up to May 21, 2020).</p>
+                    <a class="btn btn-primary btn-lg" href="http://1.15.156.121:88/" role="button">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron m-auto">
+                    <h1 class="display-4">Traffic Prediction Visualization Platform</h1>
+                    <p class="lead">A web platform based on echarts and front end web technology, using flask as web frame and MySQL as database.</p>
+                    <hr class="my-4">
+                    <p>This project is an entry of University Students' Service Outsourcing Innovation Competition.</p>
+                    <a class="btn btn-primary btn-lg" href="http://1.15.156.121:80/" role="button">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row footer">
+            <div class="col-xl-12">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../static/js/my_toast.js"></script>
+    <script src="../static/js/util.js"></script>
+</body>
+
+</html>
