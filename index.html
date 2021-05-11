@@ -45,6 +45,12 @@
         .row {
             margin-top: 20px;
         }
+        
+        .icon {
+            float: right;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
     </style>
 
     <script>
@@ -71,7 +77,11 @@
                 <nav class="nav flex-xl-column navbar-expand-sm navbar-light bg-light" style="position: sticky; top:0;">
 
 
-                    <a class="navbar-brand" href="#"><strong>Home Page</strong></a>
+                    <a class="navbar-brand" href="#">
+                        <h3><strong>Home Page</strong></h3>
+                    </a>
+                    <!-- <img src="./static/img/cartoon_avatar.JPG" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+
                     <button class="navbar-toggler" style="position: absolute; right: 0;" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -110,7 +120,11 @@
 
                 <div class="row">
                     <div class="col-xl-12">
-                        <h3><strong>What's new?</strong></h3>
+                        <h5><strong>What's new?</strong>
+                            <a data-toggle="modal" data-target="#contactInfoModal"> <svg t="1620736522610" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4527" width="20" height="20"><path d="M777.142857 440.685714c-7.314286-12.8-18.285714-21.942857-32.914286-25.6-5.485714-128-109.714286-230.4-239.542857-230.4-128 0-234.057143 102.4-239.542857 228.571429-14.628571 1.828571-29.257143 10.971429-36.571428 25.6-34.742857 10.971429-58.514286 54.857143-58.514286 111.542857 0 54.857143 23.771429 100.571429 58.514286 111.542857 9.142857 16.457143 25.6 25.6 43.885714 25.6 27.428571 0 51.2-21.942857 51.2-51.2v-173.714286c0-18.285714-9.142857-32.914286-23.771429-42.057142 1.828571-109.714286 91.428571-199.314286 202.971429-199.314286 109.714286 0 201.142857 87.771429 202.971428 197.485714-16.457143 9.142857-25.6 25.6-25.6 43.885714V640c0 18.285714 10.971429 36.571429 27.428572 43.885714v25.6c0 51.2-40.228571 91.428571-91.428572 91.428572h-45.714285c-10.971429 0-18.285714 7.314286-18.285715 18.285714s7.314286 18.285714 18.285715 18.285714h45.714285c71.314286 0 128-56.685714 128-128v-21.942857c12.8-3.657143 25.6-12.8 32.914286-25.6 34.742857-10.971429 58.514286-54.857143 58.514286-111.542857 0-53.028571-25.6-98.742857-58.514286-109.714286zM287.085714 640c0 7.314286-5.485714 14.628571-14.628571 14.628571-5.485714 0-12.8-3.657143-12.8-10.971428l-3.657143-14.628572h-12.8c-16.457143-1.828571-36.571429-32.914286-36.571429-76.8 0-43.885714 20.114286-74.971429 36.571429-76.8h12.8l3.657143-12.8c1.828571-5.485714 7.314286-10.971429 12.8-10.971428 7.314286 0 14.628571 5.485714 14.628571 14.628571V640z m475.428572-10.971429H749.714286l-3.657143 12.8c-1.828571 5.485714-7.314286 10.971429-12.8 10.971429-7.314286 0-14.628571-5.485714-14.628572-14.628571v-173.714286c0-7.314286 5.485714-14.628571 14.628572-14.628572 5.485714 0 12.8 3.657143 12.8 10.971429l3.657143 14.628571h12.8c16.457143 1.828571 36.571429 32.914286 36.571428 76.8 0 43.885714-20.114286 74.971429-36.571428 76.8z" fill="#231815" p-id="4528"></path><path d="M499.2 806.4c-3.657143 3.657143-5.485714 7.314286-5.485714 12.8 0 5.485714 1.828571 9.142857 5.485714 12.8 3.657143 3.657143 7.314286 5.485714 12.8 5.485714 5.485714 0 9.142857-1.828571 12.8-5.485714 3.657143-3.657143 5.485714-9.142857 5.485714-12.8 0-5.485714-1.828571-9.142857-5.485714-12.8-7.314286-7.314286-18.285714-7.314286-25.6 0z" fill="#231815" p-id="4529"></path></svg></a>
+                            <a data-toggle="modal" data-target="#leaveMessageModal"><svg t="1620736304936" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3279" width="20" height="20"><path d="M905 119.2H119.4c-31 0-56.1 25.1-56.1 56.1v476.9c0 31 25.1 56.1 56.1 56.1h56.1v-56.1h-56.1V175.3H905v476.9H400v15.6L287.8 801.7V652.3h-56.1v252.5l44.1-1.5 163.5-194.9H905c31 0 56.1-25.1 56.1-56.1v-477c0-31-25.1-56.1-56.1-56.1zM343.9 399.8c0-31-25.1-56.1-56.1-56.1s-56.1 25.1-56.1 56.1 25.1 56.1 56.1 56.1 56.1-25.1 56.1-56.1z m224.4 0c0-31-25.1-56.1-56.1-56.1s-56.1 25.1-56.1 56.1 25.1 56.1 56.1 56.1 56.1-25.1 56.1-56.1z m224.5 0c0-31-25.1-56.1-56.1-56.1s-56.1 25.1-56.1 56.1 25.1 56.1 56.1 56.1c30.9 0 56.1-25.1 56.1-56.1z" fill="#2c2c2c" p-id="3280"></path></svg></a>
+                        </h5>
+
                     </div>
                 </div>
 
@@ -171,19 +185,13 @@
                     </div>
 
 
-
-
-
-
-
-
                 </div>
 
 
 
                 <div class="row">
                     <div class="col-xl-12">
-                        <h3><strong>Explore</strong></h3>
+                        <h5><strong>Explore</strong></h5>
                     </div>
                 </div>
 
@@ -193,9 +201,9 @@
                         <!-- <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover01.png') no-repeat center center;background-size: 100%;"></div> -->
 
                         <!-- stroke-light -->
-                        <div class="jumbotron m-auto bg-light shadow-sm">
+                        <div class="jumbotron m-auto bg-white shadow-sm">
                             <h5><span class="badge badge-dark">2021/5/8</span></h5>
-                            <h1 class="display-4">USA COVID-19 Visualization Platform</h1>
+                            <h2>USA COVID-19 Visualization Platform</h2>
                             <p class="lead">A web platform based on echarts and front end web technology, merely no back-end technology is used.</p>
                             <hr class="my-4">
                             <p>This project is the final assignment of Hadoop course. It is about data statistics and visualization of the US epidemic (up to May 21, 2020).</p>
@@ -212,9 +220,9 @@
 
                         <!-- <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover02.png') repeat center center;background-size: 100%;"></div> -->
                         <!-- text-light stroke-light -->
-                        <div class="jumbotron m-auto bg-light shadow-sm">
+                        <div class="jumbotron m-auto bg-white shadow-sm">
                             <h5><span class="badge badge-dark">2021/4/20</span></h5>
-                            <h1 class="display-4">Traffic Prediction Visualization Platform</h1>
+                            <h2>Traffic Prediction Visualization Platform</h2>
                             <p class="lead">A web platform based on echarts and front end web technology, using flask as web frame and MySQL as database.</p>
                             <hr class="my-4">
                             <p>This project is an entry of University Students' Service Outsourcing Innovation Competition.</p>
@@ -232,6 +240,65 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!-- 联系方式Modl -->
+        <section>
+            <div class="modal fade" id="contactInfoModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <p><strong>QQ:</strong> &nbsp; 396909028</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 留言modal -->
+        <section>
+            <div class="modal fade" id="leaveMessageModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <textarea class="w-100" style="height: 130px;" placeholder="Leave your message here:"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
 
