@@ -31,14 +31,19 @@
             position: absolute;
             z-index: -1;
         }
-        
+        /*
         .jumbotron {
             background: none;
             border: #161515 solid 1px;
         }
+        */
         
         .stroke-light {
-            text-shadow: 5px 5px 5px #a7a7a7;
+            text-shadow: 1px 1px 1px #a7a7a7;
+        }
+        
+        .row {
+            margin-top: 20px;
         }
     </style>
 
@@ -59,7 +64,7 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row bg-light m-auto rounded border-bottom shadow-sm" style="position: sticky; top:1px; z-index:999;">
             <div class="col-xl-12 col-sm-12">
                 <nav class="nav nav-pills nav-stacked nav-fill">
                     <a class="navbar-brand text-dark" href="#">Home Page</a>
@@ -68,20 +73,70 @@
                     <a class="nav-link text-dark" href="#">More</a>
                 </nav>
             </div>
+
+        </div>
+        <!-- <hr style="margin:0; padding:0; border-top:1px solid #161515;"> -->
+
+
+
+        <div class="row">
+            <div class="col-xl-12">
+                <h3 class="stroke-light">What's new?</h3>
+            </div>
         </div>
 
-        <hr style="margin:0; padding:0; border-top:1px solid #161515;">
+        <div class="row justify-content-lg-center">
+            <div class="col-xl-4 mb-3 mb-xl-0">
+                <div class="card shadow-sm">
+                    <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Let me see!</a>
+                    </div>
+                </div>
+            </div>
 
-        <br>
+            <div class="col-xl-4 mb-3 mb-xl-0">
+                <div class="card shadow-sm">
+                    <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Let me see!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 mb-3 mb-xl-0">
+                <div class="card shadow-sm">
+                    <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Let me see!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-xl-12">
+                <h3 class="stroke-light">Explore</h3>
+            </div>
+        </div>
+
 
         <div class="row">
             <div class="col-sm-12">
+                <!-- <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover01.png') no-repeat center center;background-size: 100%;"></div> -->
 
-
-                <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover01.png') no-repeat center center;background-size: 100%;"></div>
-
-
-                <div class="jumbotron m-auto stroke-light">
+                <!-- stroke-light -->
+                <div class="jumbotron m-auto bg-light shadow-sm">
+                    <h5><span class="badge badge-dark">2021/5/8</span></h5>
                     <h1 class="display-4">USA COVID-19 Visualization Platform</h1>
                     <p class="lead">A web platform based on echarts and front end web technology, merely no back-end technology is used.</p>
                     <hr class="my-4">
@@ -92,14 +147,15 @@
             </div>
         </div>
 
-        <br>
+
 
         <div class="row">
             <div class="col-sm-12">
 
-                <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover02.png') repeat center center;background-size: 100%;"></div>
-
-                <div class="jumbotron m-auto text-light stroke-light">
+                <!-- <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover02.png') repeat center center;background-size: 100%;"></div> -->
+                <!-- text-light stroke-light -->
+                <div class="jumbotron m-auto bg-light shadow-sm">
+                    <h5><span class="badge badge-dark">2021/4/20</span></h5>
                     <h1 class="display-4">Traffic Prediction Visualization Platform</h1>
                     <p class="lead">A web platform based on echarts and front end web technology, using flask as web frame and MySQL as database.</p>
                     <hr class="my-4">
