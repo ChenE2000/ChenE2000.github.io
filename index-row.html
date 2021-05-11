@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/toast.min.css">
+    <link rel="Shortcut Icon" href="static/img/20210509023827712_easyicon_net_16.ico">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="static/js/toast.min.js"></script>
+
+    <style>
+        html {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            user-select: none;
+        }
+        
+        .blur-bg {
+            filter: blur(5px);
+            width: 97.5%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        /*
+        .jumbotron {
+            background: none;
+            border: #161515 solid 1px;
+        }
+        */
+        
+        .stroke-light {
+            text-shadow: 1px 1px 1px #a7a7a7;
+        }
+        
+        .row {
+            margin-top: 20px;
+        }
+    </style>
+
+    <script>
+        $('[data-toggle="popover"]').popover({
+            container: 'body',
+            title: 'Search',
+            html: true,
+            placement: 'bottom',
+            sanitize: false,
+            content: function() {
+                return $("#PopoverContent").html();
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bg-light m-auto rounded-bottom border-bottom shadow-sm" style="position: sticky; top:0; z-index:999;">
+            <div class="col-12">
+                <!-- <nav class="nav nav-pills flex-column flex-xl-row">
+                    <a class="navbar-brand text-dark" href="#"><strong>Home Page</strong></a>
+                    <a class="nav-link text-dark" href="#">Article</a>
+                    <a class="nav-link text-dark" href="#">Share</a>
+                    <a class="nav-link text-dark" href="#">More</a>
+
+
+                </nav> -->
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="#"><strong>Home Page</strong></a>
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Article</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Share</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">More</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form> -->
+                    </div>
+                </nav>
+
+
+            </div>
+
+        </div>
+        <!-- <hr style="margin:0; padding:0; border-top:1px solid #161515;"> -->
+
+
+
+        <div class="row">
+            <div class="col-xl-12">
+                <h3><strong>What's new?</strong></h3>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-8 mb-3 mb-xl-0">
+                <div class="card shadow-sm h-100">
+                    <!-- <img src="./static/img/fack_img.png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Let me see!</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-xl-4" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="card shadow-sm">
+                            <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Let me see!</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card shadow-sm">
+                            <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Let me see!</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card shadow-sm">
+                            <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Let me see!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="col-xl-4 mb-3 mb-xl-0">
+                <div class="card shadow-sm">
+                    <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Let me see!</a>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-xl-12">
+                <h3><strong>Explore</strong></h3>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover01.png') no-repeat center center;background-size: 100%;"></div> -->
+
+                <!-- stroke-light -->
+                <div class="jumbotron m-auto bg-light shadow-sm">
+                    <h5><span class="badge badge-dark">2021/5/8</span></h5>
+                    <h1 class="display-4">USA COVID-19 Visualization Platform</h1>
+                    <p class="lead">A web platform based on echarts and front end web technology, merely no back-end technology is used.</p>
+                    <hr class="my-4">
+                    <p>This project is the final assignment of Hadoop course. It is about data statistics and visualization of the US epidemic (up to May 21, 2020).</p>
+                    <a class="btn btn-primary btn-lg" href="http://1.15.156.121:88/" role="button">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <!-- <div class="jumbotron m-auto blur-bg" style="background: url('./static/img/cover02.png') repeat center center;background-size: 100%;"></div> -->
+                <!-- text-light stroke-light -->
+                <div class="jumbotron m-auto bg-light shadow-sm">
+                    <h5><span class="badge badge-dark">2021/4/20</span></h5>
+                    <h1 class="display-4">Traffic Prediction Visualization Platform</h1>
+                    <p class="lead">A web platform based on echarts and front end web technology, using flask as web frame and MySQL as database.</p>
+                    <hr class="my-4">
+                    <p>This project is an entry of University Students' Service Outsourcing Innovation Competition.</p>
+                    <a class="btn btn-primary btn-lg" href="http://1.15.156.121:80/" role="button">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row footer">
+            <div class="col-xl-12">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="static/js/my_toast.js"></script>
+    <script src="static/js/util.js"></script>
+</body>
+
+</html>
