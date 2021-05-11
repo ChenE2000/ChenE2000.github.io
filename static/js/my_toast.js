@@ -17,12 +17,33 @@ $.toastDefaults.position = 'top-center';
 $.toastDefaults.dismissible = true;
 $.toastDefaults.stackable = true;
 $.toastDefaults.pauseDelayOnHover = true;
+$.toastDefaults.delay = 5000;
 
 // type是 ['info', 'warning', 'success', 'error']中的一个
+function showToast(type, title, content) {
+
+    // $.snack(type, content);
+
+    $.toast({
+        type: type,
+        title: title,
+        // subtitle: '11 mins ago',
+        content: content,
+        delay: 2000
+    });
+}
+
 function showSnack(type, content) {
 
-    $.snack(type, content);
+    // $.snack(type, content);
+
+    $.toast({
+        type: type,
+        title: content,
+        delay: 2000
+    });
 }
+
 $('#liveToastBtn').click(function() {
     showSnack('error', "fail")
         // $.snack("error", "fail!!");
