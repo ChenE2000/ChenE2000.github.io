@@ -55,6 +55,21 @@
             margin-left: 1rem;
             cursor: pointer;
         }
+        
+        .card-img-top {
+            height: 180px;
+            overflow: hidden;
+            background-size: 50%;
+            background-repeat: no-repeat;
+        }
+        /*.nav-item {
+            transition: all 1s ease 0s;
+        }
+        
+        .nav-item :hover {
+            transform: scale(1.005);
+            box-shadow: 5px 5px 2px #b8b7b7;
+        }*/
     </style>
 
     <script>
@@ -75,6 +90,13 @@
 <body>
     <div class="container">
 
+        <div style="position: fixed; top:85%; right:5%; z-index:999; cursor:pointer;">
+            <svg id="to_top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+        </div>
+
+
         <div class="row bg-light m-auto">
             <div class="col-xl-2">
 
@@ -93,7 +115,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-                        <ul class="navbar-nav flex-xl-column">
+                        <ul class="navbar-nav flex-xl-column w-100">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Features</a>
                             </li>
@@ -154,12 +176,12 @@
                         <div class="carousel-inner shadow-sm">
                             <div class="carousel-item active">
 
+                                <!-- card1 -->
                                 <div class="card">
-                                    <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                                    <img src="./static/img/数据可视化展示.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Let me see!</a>
+                                        <h5 class="card-title">Data Visualization</h5>
+                                        <p class="card-text">The story behind the data is more vivid than it looks.</p>
                                     </div>
                                 </div>
 
@@ -168,11 +190,10 @@
                             <div class="carousel-item">
 
                                 <div class="card">
-                                    <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                                    <img src="./static/img/数据交付.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Let me see!</a>
+                                        <h5 class="card-title">Big Data</h5>
+                                        <p class="card-text">The world’s most valuable resource today is data.</p>
                                     </div>
                                 </div>
 
@@ -180,11 +201,10 @@
 
                             <div class="carousel-item">
                                 <div class="card">
-                                    <img src="./static/img/fack_img.png" class="card-img-top" alt="...">
+                                    <img src="./static/img/项目协作.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Let me see!</a>
+                                        <h5 class="card-title">Team Work</h5>
+                                        <p class="card-text">One man is incapable of building pyramid alone.</p>
                                     </div>
                                 </div>
                             </div>
